@@ -1,7 +1,7 @@
 
 import pandas as pd
 import serial
-df = pd.read_csv('Br1-3-2026-data.csv')
+
 #print(df)
 
 #used for processing Embedded CSV file
@@ -28,7 +28,7 @@ port = "COM3"
 print(port)
 if port:
     print(f"Connected to {port}")
-    #ser = serial.Serial(port, 115200)
+   
 else:
     print("No MicroBit Found")
 print('Live Data')
@@ -47,3 +47,4 @@ while True:
     risk = check_flood_risk(x,z)
     print(f'risk-{risk}')
         
+
