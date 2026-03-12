@@ -4,8 +4,7 @@ import os
 
 ser = serial.Serial("COM3",115200)
 line = ser.readline().decode("utf-8",errors="ignore").strip()
-#filename = "c:\Users\\pbarry\Desktop\Python Programs\Sample_Final_2024\Br1-3-2026.csv"
-filename = "Br1-3-2026.csv"
+
 
 for x in range(4):
     print(line)
@@ -19,4 +18,4 @@ for x in range(4):
     with open(filename, "a", newline="") as f:
         writer = csv.writer(f)
         writer.writerow([BR3_sim_result,moisture,extTemp,])
-print(os.getcwd())
+
