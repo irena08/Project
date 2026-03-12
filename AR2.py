@@ -41,9 +41,10 @@ while True:
     y = int(data[2])   #microbit temp
     z = 2 #Moisture multiplier
     temp = int(data[1])
-    #print(f"moisture - (x,y) temp - {temp}")
+  
     
     risk = check_flood_risk(x,z)
     print(f'risk-{risk}')
         
+
 
